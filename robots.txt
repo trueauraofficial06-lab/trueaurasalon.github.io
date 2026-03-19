@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trueauraofficial06-lab.github.io/trueaurasalon.github.io/sitemap.xml
