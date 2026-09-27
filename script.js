@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- MAKEUP ----
     { cat: 'makeup', name: 'Party Makeup', desc: 'Glam, long-lasting makeup for events and celebrations.', price: 'On Request', img: 'assets/images/treatment-party-makeup.jpg' },
     { cat: 'makeup', name: 'Bridal Makeup', desc: 'Flawless, camera-ready bridal looks by expert artists.', price: 'On Request', img: 'assets/images/treatment-bridal-makeup.jpg' },
-    { cat: 'makeup', name: 'Engagement / Pre-Bridal Makeup', desc: 'Soft glam makeup for your engagement day.', price: 'On Request' }, // no dedicated photo yet
-    { cat: 'makeup', name: 'HD / Airbrush Makeup', desc: 'High-definition finish that photographs beautifully.', price: 'On Request' }, // no dedicated photo yet
-    { cat: 'makeup', name: 'Saree Draping & Styling', desc: 'Perfect pleats and pallu styling for any occasion.', price: 'On Request' }, // no dedicated photo yet
+    { cat: 'makeup', name: 'Engagement / Pre-Bridal Makeup', desc: 'Soft glam makeup for your engagement day.', price: 'On Request', img: 'assets/images/makeup-application.jpg' },
+    { cat: 'makeup', name: 'HD / Airbrush Makeup', desc: 'High-definition finish that photographs beautifully.', price: 'On Request', img: 'assets/images/makeup-application.jpg' },
+    { cat: 'makeup', name: 'Saree Draping & Styling', desc: 'Perfect pleats and pallu styling for any occasion.', price: 'On Request', img: 'assets/images/bridal-dupatta.jpg' },
 
     // ---- SKIN ----
     { cat: 'skin', name: 'Basic & Advanced Facials', desc: 'Deep-cleansing and brightening facials for every skin type.', price: 'On Request', img: 'assets/images/treatment-advanced-facial.jpg' },
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { cat: 'nail', name: 'Manicure (Classic / Spa)', desc: 'Hand care, shaping and polish for neat, healthy nails.', price: 'On Request', img: 'assets/images/treatment-manicure.jpg' },
     { cat: 'nail', name: 'Pedicure (Classic / Spa)', desc: 'Relaxing foot care and polish finish.', price: 'On Request', img: 'assets/images/treatment-pedicure.jpg' },
     { cat: 'nail', name: 'Nail Art', desc: 'Custom designs to match your style or occasion.', price: 'On Request', img: 'assets/images/treatment-nail-art.jpg' },
-    { cat: 'nail', name: 'Nail Extensions', desc: 'Durable, natural-looking length and shape.', price: 'On Request' }, // no dedicated photo yet
-    { cat: 'nail', name: 'Gel Polish / Nail Paint', desc: 'Chip-resistant colour with a glossy finish.', price: 'On Request' }, // no dedicated photo yet
+    { cat: 'nail', name: 'Nail Extensions', desc: 'Durable, natural-looking length and shape.', price: 'On Request', img: 'assets/images/treatment-nail-extensions.jpg' },
+    { cat: 'nail', name: 'Gel Polish / Nail Paint', desc: 'Chip-resistant colour with a glossy finish.', price: 'On Request', img: 'assets/images/treatment-gel-polish.jpg' },
   ];
 
   // Images reused from the two salon photos we have — swap with real per-service photos later.
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Keratin & Smoothening', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-keratin-smoothening.jpg' },
     { name: 'Highlights & Balayage', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-highlights-balayage.jpg' },
     { name: 'Advanced Facial', cat: 'skin', price: 'On Request', img: 'assets/images/treatment-advanced-facial.jpg' },
-    { name: 'Gel Polish / Nail Paint', cat: 'nail', price: 'On Request' }, // no dedicated photo yet
+    { name: 'Gel Polish / Nail Paint', cat: 'nail', price: 'On Request', img: 'assets/images/treatment-gel-polish.jpg' },
     { name: 'Party Makeup', cat: 'makeup', price: 'On Request', img: 'assets/images/treatment-party-makeup.jpg' },
     { name: 'Hair Spa & Deep Conditioning', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-hair-spa.jpg' },
     { name: 'Nail Art', cat: 'nail', price: 'On Request', img: 'assets/images/treatment-nail-art.jpg' },
