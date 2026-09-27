@@ -13,35 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
   --------------------------------------------- */
   const SERVICES = [
     // ---- HAIR ----
-    { cat: 'hair', name: 'Haircut & Styling', desc: 'Precision cuts and finish styling for every hair type.', price: 'On Request', img: 'assets/images/treatment-haircut-styling.jpg' },
-    { cat: 'hair', name: 'Hair Color / Global Color', desc: 'Full-head colour using premium international brands.', price: 'On Request', img: 'assets/images/treatment-hair-color.jpg' },
-    { cat: 'hair', name: 'Highlights & Balayage', desc: 'Hand-painted dimension for a natural sun-kissed look.', price: 'On Request', img: 'assets/images/treatment-highlights-balayage.jpg' },
-    { cat: 'hair', name: 'Keratin & Smoothening', desc: 'Frizz-free, silky-smooth hair that lasts for months.', price: 'On Request', img: 'assets/images/treatment-keratin-smoothening.jpg' },
-    { cat: 'hair', name: 'Hair Spa & Deep Conditioning', desc: 'Nourishing therapy to restore shine and strength.', price: 'On Request', img: 'assets/images/treatment-hair-spa.jpg' },
-    { cat: 'hair', name: 'Hair Extensions', desc: 'Seamless length and volume, matched to your natural hair.', price: 'On Request', img: 'assets/images/treatment-hair-extensions.jpg' },
-    { cat: 'hair', name: 'Bridal & Party Hairstyling', desc: 'Elegant updos and styles for your big day.', price: 'On Request', img: 'assets/images/treatment-bridal-party-hairstyling.jpg' },
+    { cat: 'hair', name: 'Haircut & Styling', desc: 'Precision cuts and finish styling for every hair type.', price: 'On Request', img: 'treatment-haircut-styling.jpg' },
+    { cat: 'hair', name: 'Hair Color / Global Color', desc: 'Full-head colour using premium international brands.', price: 'On Request', img: 'treatment-hair-color.jpg' },
+    { cat: 'hair', name: 'Highlights & Balayage', desc: 'Hand-painted dimension for a natural sun-kissed look.', price: 'On Request', img: 'treatment-highlights-balayage.jpg' },
+    { cat: 'hair', name: 'Keratin & Smoothening', desc: 'Frizz-free, silky-smooth hair that lasts for months.', price: 'On Request', img: 'treatment-keratin-smoothening.jpg' },
+    { cat: 'hair', name: 'Hair Spa & Deep Conditioning', desc: 'Nourishing therapy to restore shine and strength.', price: 'On Request', img: 'treatment-hair-spa.jpg' },
+    { cat: 'hair', name: 'Hair Extensions', desc: 'Seamless length and volume, matched to your natural hair.', price: 'On Request', img: 'treatment-hair-extensions.jpg' },
+    { cat: 'hair', name: 'Bridal & Party Hairstyling', desc: 'Elegant updos and styles for your big day.', price: 'On Request', img: 'treatment-bridal-party-hairstyling.jpg' },
 
     // ---- MAKEUP ----
-    { cat: 'makeup', name: 'Party Makeup', desc: 'Glam, long-lasting makeup for events and celebrations.', price: 'On Request', img: 'assets/images/treatment-party-makeup.jpg' },
-    { cat: 'makeup', name: 'Bridal Makeup', desc: 'Flawless, camera-ready bridal looks by expert artists.', price: 'On Request', img: 'assets/images/treatment-bridal-makeup.jpg' },
-    { cat: 'makeup', name: 'Engagement / Pre-Bridal Makeup', desc: 'Soft glam makeup for your engagement day.', price: 'On Request' },
-    { cat: 'makeup', name: 'HD / Airbrush Makeup', desc: 'High-definition finish that photographs beautifully.', price: 'On Request' },
-    { cat: 'makeup', name: 'Saree Draping & Styling', desc: 'Perfect pleats and pallu styling for any occasion.', price: 'On Request' },
+    { cat: 'makeup', name: 'Party Makeup', desc: 'Glam, long-lasting makeup for events and celebrations.', price: 'On Request', img: 'treatment-party-makeup.jpg' },
+    { cat: 'makeup', name: 'Bridal Makeup', desc: 'Flawless, camera-ready bridal looks by expert artists.', price: 'On Request', img: 'treatment-bridal-makeup.jpg' },
+    { cat: 'makeup', name: 'Engagement / Pre-Bridal Makeup', desc: 'Soft glam makeup for your engagement day.', price: 'On Request', img: 'treatment-engagement-makeup.jpg' },
+    { cat: 'makeup', name: 'HD / Airbrush Makeup', desc: 'High-definition finish that photographs beautifully.', price: 'On Request', img: 'treatment-hd-airbrush-makeup.jpg' },
+    { cat: 'makeup', name: 'Saree Draping & Styling', desc: 'Perfect pleats and pallu styling for any occasion.', price: 'On Request', img: 'treatment-saree-draping.jpg' },
 
     // ---- SKIN ----
-    { cat: 'skin', name: 'Basic & Advanced Facials', desc: 'Deep-cleansing and brightening facials for every skin type.', price: 'On Request', img: 'assets/images/treatment-advanced-facial.jpg' },
-    { cat: 'skin', name: 'Cleanup', desc: 'Quick refresh to clear impurities and restore glow.', price: 'On Request', img: 'assets/images/treatment-cleanup.jpg' },
-    { cat: 'skin', name: 'De-Tan Treatment', desc: 'Removes sun tan and evens out skin tone.', price: 'On Request' },
-    { cat: 'skin', name: 'Skin Polishing', desc: 'Gentle exfoliation for soft, radiant skin.', price: 'On Request', img: 'assets/images/treatment-skin-polishing.jpg' },
-    { cat: 'skin', name: 'Bleach', desc: 'Instant brightening for face and body.', price: 'On Request', img: 'assets/images/treatment-bleach.jpg' },
-    { cat: 'skin', name: 'Threading & Waxing', desc: 'Precise, gentle hair removal for a clean finish.', price: 'On Request', img: 'assets/images/treatment-threading-waxing.jpg' },
+    { cat: 'skin', name: 'Basic & Advanced Facials', desc: 'Deep-cleansing and brightening facials for every skin type.', price: 'On Request', img: 'treatment-advanced-facial.jpg' },
+    { cat: 'skin', name: 'Cleanup', desc: 'Quick refresh to clear impurities and restore glow.', price: 'On Request', img: 'treatment-cleanup.jpg' },
+    { cat: 'skin', name: 'De-Tan Treatment', desc: 'Removes sun tan and evens out skin tone.', price: 'On Request', img: 'treatment-de-tan.jpg' },
+    { cat: 'skin', name: 'Skin Polishing', desc: 'Gentle exfoliation for soft, radiant skin.', price: 'On Request', img: 'treatment-skin-polishing.jpg' },
+    { cat: 'skin', name: 'Bleach', desc: 'Instant brightening for face and body.', price: 'On Request', img: 'treatment-bleach.jpg' },
+    { cat: 'skin', name: 'Threading & Waxing', desc: 'Precise, gentle hair removal for a clean finish.', price: 'On Request', img: 'treatment-threading-waxing.jpg' },
 
     // ---- NAIL ----
-    { cat: 'nail', name: 'Manicure (Classic / Spa)', desc: 'Hand care, shaping and polish for neat, healthy nails.', price: 'On Request', img: 'assets/images/treatment-manicure.jpg' },
-    { cat: 'nail', name: 'Pedicure (Classic / Spa)', desc: 'Relaxing foot care and polish finish.', price: 'On Request', img: 'assets/images/treatment-pedicure.jpg' },
-    { cat: 'nail', name: 'Nail Art', desc: 'Custom designs to match your style or occasion.', price: 'On Request', img: 'assets/images/treatment-nail-art.jpg' },
-    { cat: 'nail', name: 'Nail Extensions', desc: 'Durable, natural-looking length and shape.', price: 'On Request' },
-    { cat: 'nail', name: 'Gel Polish / Nail Paint', desc: 'Chip-resistant colour with a glossy finish.', price: 'On Request' },
+    { cat: 'nail', name: 'Manicure (Classic / Spa)', desc: 'Hand care, shaping and polish for neat, healthy nails.', price: 'On Request', img: 'treatment-manicure.jpg' },
+    { cat: 'nail', name: 'Pedicure (Classic / Spa)', desc: 'Relaxing foot care and polish finish.', price: 'On Request', img: 'treatment-pedicure.jpg' },
+    { cat: 'nail', name: 'Nail Art', desc: 'Custom designs to match your style or occasion.', price: 'On Request', img: 'treatment-nail-art.jpg' },
+    { cat: 'nail', name: 'Nail Extensions', desc: 'Durable, natural-looking length and shape.', price: 'On Request', img: 'treatment-nail-extensions.jpg' },
+    { cat: 'nail', name: 'Gel Polish / Nail Paint', desc: 'Chip-resistant colour with a glossy finish.', price: 'On Request', img: 'treatment-gel-polish.jpg' },
   ];
 
   // Images reused from the two salon photos we have — swap with real per-service photos later.
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     servicesGrid.innerHTML = SERVICES.map(s => `
       <article class="service-card" data-cat="${s.cat}">
         <div class="service-card-img">
-          <img src="${s.img || CAT_IMAGES[s.cat]}" alt="${s.name} at True Aura Family Salon" loading="lazy" onerror="this.onerror=null;this.src='${CAT_IMAGES[s.cat]}';">
+          <img src="assets/images/${s.img}" alt="${s.name} at True Aura Family Salon" loading="lazy" onerror="this.onerror=null;this.src='${CAT_IMAGES[s.cat]}';">
         </div>
         <div class="service-card-body">
           <div class="service-card-top">
@@ -117,21 +117,21 @@ document.addEventListener('DOMContentLoaded', () => {
      4. POPULAR SERVICES GRID (best-seller style)
   --------------------------------------------- */
   const POPULAR = [
-    { name: 'Bridal Makeup', cat: 'makeup', price: 'On Request', img: 'assets/images/treatment-bridal-makeup.jpg' },
-    { name: 'Keratin & Smoothening', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-keratin-smoothening.jpg' },
-    { name: 'Highlights & Balayage', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-highlights-balayage.jpg' },
-    { name: 'Advanced Facial', cat: 'skin', price: 'On Request', img: 'assets/images/treatment-advanced-facial.jpg' },
-    { name: 'Gel Polish / Nail Paint', cat: 'nail', price: 'On Request' },
-    { name: 'Party Makeup', cat: 'makeup', price: 'On Request', img: 'assets/images/treatment-party-makeup.jpg' },
-    { name: 'Hair Spa & Deep Conditioning', cat: 'hair', price: 'On Request', img: 'assets/images/treatment-hair-spa.jpg' },
-    { name: 'Nail Art', cat: 'nail', price: 'On Request', img: 'assets/images/treatment-nail-art.jpg' },
+    { name: 'Bridal Makeup', cat: 'makeup', price: 'On Request', img: 'treatment-bridal-makeup.jpg' },
+    { name: 'Keratin & Smoothening', cat: 'hair', price: 'On Request', img: 'treatment-keratin-smoothening.jpg' },
+    { name: 'Highlights & Balayage', cat: 'hair', price: 'On Request', img: 'treatment-highlights-balayage.jpg' },
+    { name: 'Advanced Facial', cat: 'skin', price: 'On Request', img: 'treatment-advanced-facial.jpg' },
+    { name: 'Gel Polish / Nail Paint', cat: 'nail', price: 'On Request', img: 'treatment-gel-polish.jpg' },
+    { name: 'Party Makeup', cat: 'makeup', price: 'On Request', img: 'treatment-party-makeup.jpg' },
+    { name: 'Hair Spa & Deep Conditioning', cat: 'hair', price: 'On Request', img: 'treatment-hair-spa.jpg' },
+    { name: 'Nail Art', cat: 'nail', price: 'On Request', img: 'treatment-nail-art.jpg' },
   ];
   const popularGrid = document.getElementById('popularGrid');
   if (popularGrid) {
     popularGrid.innerHTML = POPULAR.map(p => `
       <article class="popular-card">
         <div class="popular-card-img">
-          <img src="${p.img || CAT_IMAGES[p.cat]}" alt="${p.name} at True Aura Family Salon" loading="lazy" onerror="this.onerror=null;this.src='${CAT_IMAGES[p.cat]}';">
+          <img src="assets/images/${p.img}" alt="${p.name} at True Aura Family Salon" loading="lazy" onerror="this.onerror=null;this.src='${CAT_IMAGES[p.cat]}';">
         </div>
         <div class="popular-card-body">
           <h3>${p.name}</h3>
