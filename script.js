@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- SKIN ----
     { cat: 'skin', name: 'Basic & Advanced Facials', desc: 'Deep-cleansing and brightening facials for every skin type.', price: 'On Request', img: 'assets/images/treatment-advanced-facial.jpg' },
     { cat: 'skin', name: 'Cleanup', desc: 'Quick refresh to clear impurities and restore glow.', price: 'On Request', img: 'assets/images/treatment-cleanup.jpg' },
-    { cat: 'skin', name: 'De-Tan Treatment', desc: 'Removes sun tan and evens out skin tone.', price: 'On Request' }, // no dedicated photo yet
+    { cat: 'skin', name: 'De-Tan Treatment', desc: 'Removes sun tan and evens out skin tone.', price: 'On Request', img: 'assets/images/treatment-skin-polishing.jpg' },
     { cat: 'skin', name: 'Skin Polishing', desc: 'Gentle exfoliation for soft, radiant skin.', price: 'On Request', img: 'assets/images/treatment-skin-polishing.jpg' },
     { cat: 'skin', name: 'Bleach', desc: 'Instant brightening for face and body.', price: 'On Request', img: 'assets/images/treatment-bleach.jpg' },
     { cat: 'skin', name: 'Threading & Waxing', desc: 'Precise, gentle hair removal for a clean finish.', price: 'On Request', img: 'assets/images/treatment-threading-waxing.jpg' },
